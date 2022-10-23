@@ -1,35 +1,36 @@
-const express = require('express');
-const path = require('path');
-const cookieParser = require('cookie-parser');
-const logger = require('morgan');
-const cors = require('cors')
+const express = require("express");
+const path = require("path");
+const cookieParser = require("cookie-parser");
+const logger = require("morgan");
+const cors = require("cors");
+const sequelize = require("./util/db");
 
 require("dotenv").config();
 
-const indexRouter = require('./routes/index');
-const keyboardRouter = require('./routes/keyboard');
+const indexRouter = require("./routes/index");
+const keyboardRouter = require("./routes/keyboard");
 
 const app = express();
 
-app.use(logger('dev'));
+app.use(cors());
+app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, "public")));
 
-const {EXPRESS_SERVER_CORS_PORT} = process.env
+app.use("/keyboard", keyboardRouter);
 
-app.use(
-	cors({
-		origin: "http://127.0.0.1:" + EXPRESS_SERVER_CORS_PORT,
-		credentials: true,
-	})
-);
+app.use("/", indexRouter);
 
-app.use('/keyboard', keyboardRouter);
-
-app.use('/', indexRouter);
-
-app.listen('3000')
+sequelize
+  .sync({ alter: true })
+  .then(() => {
+    app.listen(3000);
+    console.log();
+  })
+  .catch((err) => {
+    console.error(err);
+  });
 
 module.exports = app;

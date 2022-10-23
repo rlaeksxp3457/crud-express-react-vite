@@ -2,20 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc71a680-ac22-4840-b72a-ac0c43464218" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/controller/keyboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/util/path.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/component/card.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/component/layout.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/keyboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/util/db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/component/form.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/pages/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/pages/keyboard/create.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/pages/keyboard/detail.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/pages/keyboard/update.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controller/keyboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controller/keyboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/keyboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/keyboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/component/card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/component/card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/component/layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/layout/appbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,21 +49,36 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.18.0",
-    "javascript.nodejs.core.library.typings.version": "16.11.66",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.nodejs",
-    "ts.external.directory.path": "C:\\Users\\rlaek\\AppData\\Local\\JetBrains\\IntelliJ IDEA 2022.2.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.18.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.66&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rlaek/IdeaProjects/crud-express-react-vite/frontend&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\rlaek\\IdeaProjects\\crud-express-react-vite\\backend\\node_modules\\prettier&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\rlaek\\AppData\\Local\\JetBrains\\IntelliJ IDEA 2022.2.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rlaek\IdeaProjects\crud-express-react-vite\frontend\layout" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="react build" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/frontend/package.json" />
@@ -78,6 +100,12 @@
       <option name="presentableId" value="Default" />
       <updated>1666009974351</updated>
       <workItem from="1666009975527" duration="10476000" />
+      <workItem from="1666093413674" duration="10208000" />
+      <workItem from="1666263728368" duration="668000" />
+      <workItem from="1666343835355" duration="9806000" />
+      <workItem from="1666356740321" duration="462000" />
+      <workItem from="1666404947770" duration="605000" />
+      <workItem from="1666516004345" duration="7659000" />
     </task>
     <servers />
   </component>

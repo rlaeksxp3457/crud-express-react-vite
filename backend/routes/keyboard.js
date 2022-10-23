@@ -1,9 +1,9 @@
 const express = require('express');
-const {getKeyBoard, postKeyBoard, putKeyBoard, deleteKeyBoard} = require("../controller/keyboard");
+const {getKeyBoards, postKeyBoard, putKeyBoard, deleteKeyBoard} = require("../controller/keyboard");
 const router = express.Router();
 
 /* GET 키보드 listing. */
-router.get('/get', getKeyBoard);
+router.get('/', getKeyBoards);
 
 /* POST 키보드 create . */
 router.post('/', postKeyBoard);

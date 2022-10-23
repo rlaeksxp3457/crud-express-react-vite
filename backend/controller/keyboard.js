@@ -1,15 +1,41 @@
-exports.getKeyBoard = (req, res) => {
-	res.send([1,2,3,4,5,6,7,8,9,10])
-}
+const keyboard = require("../models/keyboard");
 
-exports.postKeyBoard = () => {
-	return []
-}
+exports.getKeyBoards = (req, res) => {
+  keyboard
+    .findAll()
+    .then((item) => {
+      console.log(item);
+      res.send(item);
+    })
+    .catch((err) => console.log(err));
+};
+
+exports.getKeyBoard = (req, res) => {
+  const { keyboardId } = req.body;
+  keyboard
+    .findByPk(keyboardId)
+    .then((item) => {
+      res.send(item);
+    })
+    .catch((err) => console.log(err));
+};
+
+exports.postKeyBoard = (req, res) => {
+  const { title, img, description } = req.body;
+  keyboard
+    .create({ title: title, img: img, description: description })
+    .then((item) => {
+      if (item) {
+        return res.send("success");
+      }
+    })
+    .catch((err) => console.log(err));
+};
 
 exports.putKeyBoard = () => {
-	return []
-}
+  return [];
+};
 
 exports.deleteKeyBoard = () => {
-	return []
-}
+  return [];
+};
