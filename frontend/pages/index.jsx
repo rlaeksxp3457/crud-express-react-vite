@@ -5,16 +5,24 @@ import axios from "axios";
 
 export function Index() {
   const [keyboard, setKeyboard] = useState([]);
+  const [show, setShow] = useState(true);
+
   useEffect(() => {
     axios({
       method: "get",
       url: "http://127.0.0.1:3000/keyboard",
     })
       .then((res) => {
-        setKeyboard(res.data);
+        if (res.status === 200 || res.statusText === "OK") {
+          if (res.data.length === 0) {
+            setShow(!show);
+          }
+          setKeyboard(res.data);
+        }
       })
       .catch((err) => console.log(err));
   }, []);
+
   return (
     <Grid
       container={true}
@@ -24,7 +32,7 @@ export function Index() {
       mt={10}
       direction="row"
     >
-      {keyboard.length > 0 ? (
+      {show ? (
         keyboard.map((item, index) => (
           <Grid
             item
@@ -35,7 +43,11 @@ export function Index() {
             mx={"auto"}
             alignItems={"center"}
           >
-            <KeyBoardCard item={item}></KeyBoardCard>
+            <KeyBoardCard
+              item={item}
+              keyboard={keyboard}
+              setKeyboard={setKeyboard}
+            ></KeyBoardCard>
           </Grid>
         ))
       ) : (

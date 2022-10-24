@@ -9,12 +9,24 @@ import {
 } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 export function KeyBoardCard(props) {
   const navigate = useNavigate();
+  const { keyboard, setKeyboard } = props;
 
   const deleteCard = () => {
-    alert("삭제 되었습니다");
+    axios({
+      method: "delete",
+      url: "http://127.0.0.1:3000/keyboard",
+      data: { id: props.item.id },
+    })
+      .then((res) => {
+        if (res.data === "success") {
+          setKeyboard(keyboard.filter((item) => item.id !== props.item.id));
+        }
+      })
+      .catch((err) => console.log(err));
   };
 
   return (

@@ -1,28 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc71a680-ac22-4840-b72a-ac0c43464218" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/models/keyboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/util/db.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/component/form.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/pages/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/pages/keyboard/create.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/pages/keyboard/detail.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/pages/keyboard/update.jsx" afterDir="false" />
+    <list default="true" id="dc71a680-ac22-4840-b72a-ac0c43464218" name="변경" comment="create page 기능구현&#10;&#10;form 컴포넌트 생성&#10;create 페이지 생성&#10;detail 페이지 생성&#10;update 페이지 생성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/config.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controller/keyboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controller/keyboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/routes/keyboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/keyboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/component/card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/component/card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/component/layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/layout/appbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/component/form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/component/form.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/pages/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/pages/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/pages/keyboard/create.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/pages/keyboard/create.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/pages/keyboard/update.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/pages/keyboard/update.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +25,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -106,7 +96,17 @@
       <workItem from="1666356740321" duration="462000" />
       <workItem from="1666404947770" duration="605000" />
       <workItem from="1666516004345" duration="7659000" />
+      <workItem from="1666536889190" duration="124000" />
+      <workItem from="1666610193647" duration="7945000" />
     </task>
+    <task id="LOCAL-00001" summary="create page 기능구현&#10;&#10;form 컴포넌트 생성&#10;create 페이지 생성&#10;detail 페이지 생성&#10;update 페이지 생성">
+      <created>1666537002914</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666537002914</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +122,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create page 기능구현&#10;&#10;form 컴포넌트 생성&#10;create 페이지 생성&#10;detail 페이지 생성&#10;update 페이지 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="create page 기능구현&#10;&#10;form 컴포넌트 생성&#10;create 페이지 생성&#10;detail 페이지 생성&#10;update 페이지 생성" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
